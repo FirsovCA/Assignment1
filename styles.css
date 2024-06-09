@@ -1,0 +1,74 @@
+body {
+    width: 60%;
+    max-width: 920px;
+    margin: 10px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 157, 0);
+}
+
+.nav > ul {
+    width: max-content;
+    margin: 10px auto;
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.nav li {
+    cursor: pointer;
+    font-size: 22px;
+    display: inline;
+    margin: 10px;
+}
+
+.input-block {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.input-block > input, textarea, select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-block label {
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: end;
+}
+
+.buttons > button {
+    cursor: pointer;
+    padding: 5px 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.reset-button {
+    background-color: rgb(255, 139, 139);
+}
+
+.submit-button {
+    background-color: rgb(145, 252, 145);
+}
+
+figure {
+    margin: 0 auto;
+    width: 400px;
+}
+
+figure img {
+    width: 400px;
+}
+
+figcaption {
+    font-size: 12px;
+}

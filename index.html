@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Pizza World</h1>
+        <nav class="nav">
+            <ul>
+                <li>Home</li>
+                <li><u>Menu</u></li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend><h2>Order Form</h2></legend>
+                    <fieldset>
+                        <legend><b>Order Details</b></legend>
+                        <div class="input-block">
+                            <!-- Multiselect menu -->
+                            <label for="pizza">Choose a pizza</label>
+                            <select name="pizza" id="pizza" multiple>
+                                <option value="Neapolitan" >Neapolitan</option>
+                                <option value="Margherita">Margherita</option>
+                                <option value="Sicilian">Sicilian</option>
+                                <option value="Hawaiian">Hawaiian</option>
+                                <option value="California">California</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <!-- Select menu -->
+                            <label for="receiving">Type of pizza</label>
+                            <select name="type_of_pizza" id="type_of_pizza">
+                                <option value="deep" >Deep dish</option>
+                                <option value="thin" selected>Thin Crust</option>
+                                <option value="thick">Thick Crust</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <!-- Block of radio-buttons -->
+                            <Fieldset>
+                                <legend>Shape</legend>
+                                <input type="radio" id="round" name="shape" value="round" checked>
+                                <label for="round">Round</label>
+                                <input type="radio" id="square" name="shape" value="square">
+                                <label for="square">Square</label>
+                            </Fieldset>                  
+                        </div>
+                        <div class="input-block">
+                            <Fieldset>
+                                <legend>Size</legend>
+                                <input type="radio" id="big" name="size" value="big">
+                                <label for="big">Big</label>
+                                <input type="radio" id="medium" name="size" value="medium" checked>
+                                <label for="medium">Medium</label>
+                                <input type="radio" id="small" name="size" value="small">
+                                <label for="small">Small</label>
+                            </Fieldset>
+                        </div>
+                        <div class="input-block">
+                            <Fieldset>
+                                <!-- Block of checkboxes -->
+                                <legend>Choose toppings</legend>
+                                <input type="checkbox" id="pepperoni" value="pepperoni">
+                                <label for="pepperoni">Pepperoni</label>
+                                <input type="checkbox" id="mushroom" value="mushroom">
+                                <label for="mushroom">Mushroom</label>
+                                <input type="checkbox" id="sausage" value="sausage">
+                                <label for="sausage">Sausage</label>
+                                <input type="checkbox" id="onion" value="onion">
+                                <label for="onion">Onion</label>
+                            </Fieldset>
+                        </div>
+                        <div class="input-block">
+                            <Fieldset>
+                                <legend>Sauces</legend>
+                                <input type="checkbox" id="red" value="red">
+                                <label for="red">Spicy Red</label>
+                                <input type="checkbox" id="bbq" value="bbq">
+                                <label for="bbq">BBQ</label>
+                                <input type="checkbox" id="alfredo" value="alfredo">
+                                <label for="alfredo">Alfredo</label>
+                                <input type="checkbox" id="pesto" value="pesto">
+                                <label for="pesto">Pesto</label>
+                                <input type="checkbox" id="cheesy" value="cheesy">
+                                <label for="cheesy">Cheesy</label>
+                            </Fieldset>
+                        </div>
+                        <div class="input-block">
+                            <label for="receiving">How would you like to get your order?</label>
+                            <!-- Select menu -->
+                            <select name="receiving" id="receiving">
+                                <option value="take_out" >Take out</option>
+                                <option value="delivery" selected>Delivery</option>
+                                <option value="eat_in">Eat-in</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="personal-info">
+                        <legend><b>Personal Information</b></legend>
+                        <div class="input-block">
+                            <!-- Name Input -->
+                            <label for="username">Name</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your Name" required />
+                        </div>
+                        <div class="input-block">
+                            <!-- Text Input -->
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your Address" required/>
+                        </div>
+                        <div class="input-block">
+                            <!-- Email Input -->
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your Email" required/>
+                        </div>
+                        <div class="input-block">
+                            <!-- Tel Input -->
+                            <label for="tel">Phone number</label>
+                            <input type="tel" id="tel" name="tel" placeholder="Enter your Phone number" />
+                        </div>
+                        <div class="input-block">
+                            <!-- Feild for comments -->
+                            <label for="comment">Comment</label>
+                            <textarea
+                                cols="20"
+                                rows="10"
+                                name="comment"
+                                id="comment"
+                                placeholder="Enter your comment"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <button type="reset" class="reset-button">Reset</button>
+                        <button type="submit" class="submit-button">Order</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <figure>
+                <img src="pizza.jpg" alt="Cartoon of pizza">
+                <figcaption>
+                    yusak_p (2018), Vector illustration of delicious slice of pepperoni pizza with melted cheese.iStock
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <h2>Copyright</h2>
+    </footer>
+</body>
+</html>
